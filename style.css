@@ -1,0 +1,242 @@
+/* Definição das variáveis de cor para fácil manutenção */
+:root {
+    --cor-header-footer: #8C39BC; /* Roxo */
+    --cor-curvas: #E93C77;         /* Rosa */
+    --cor-lados: #FF6B1C;          /* Laranja */
+    --cor-bolinhas: #00B7C3;       /* Ciano */
+    --cor-fundo-centro: #FCF2E3;   /* Creme */
+    --cor-texto-principal: #261E40;/* Roxo Escuro */
+    --cor-traco-titulo: #DAA900;   /* Dourado */
+}
+
+/* Estilos gerais do corpo da página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cor-lados);
+    color: var(--cor-texto-principal);
+    overflow-x: hidden; /* Previne scroll horizontal causado pelas curvas */
+}
+
+/* Contêiner principal que envolve toda a página */
+.page-wrapper {
+    background-color: var(--cor-fundo-centro);
+    max-width: 1200px;
+    margin: 2rem auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden; /* Mantém as curvas contidas */
+}
+
+/* Curvas laterais usando pseudo-elementos */
+.page-wrapper::before,
+.page-wrapper::after {
+    content: '';
+    position: absolute;
+    background-color: var(--cor-curvas);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+/* Curva da esquerda */
+.page-wrapper::before {
+    top: 150px;
+    left: -150px;
+}
+
+/* Curva da direita */
+.page-wrapper::after {
+    bottom: 150px;
+    right: -150px;
+}
+
+/* Cabeçalho e Rodapé */
+header, footer {
+    background-color: var(--cor-header-footer);
+    color: var(--cor-fundo-centro);
+    padding: 1rem 2rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+header {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+footer {
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Bolinhas decorativas no cabeçalho */
+.dots-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 1rem;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: var(--cor-bolinhas);
+    border-radius: 50%;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--cor-fundo-centro);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 0.5rem 0;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.nav-link:hover {
+    border-bottom-color: var(--cor-bolinhas);
+}
+
+/* Estilo do link ativo (página atual) */
+.nav-link.active {
+    border-bottom-color: var(--cor-traco-titulo);
+}
+
+/* Conteúdo principal */
+.content {
+    padding: 2rem 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--cor-traco-titulo);
+    display: inline-block; /* Faz a borda ter o tamanho do texto */
+    margin-bottom: 1.5rem;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilo da Assinatura */
+.assinatura {
+    display: block;
+    margin: 2rem auto 1rem;
+    max-width: 150px;
+    height: auto;
+}
+
+/* Estilo da lista de receitas */
+.recipe-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.recipe-list li {
+    margin-bottom: 1rem;
+}
+
+.recipe-list a {
+    text-decoration: none;
+    color: var(--cor-texto-principal);
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.recipe-list a:hover {
+    color: var(--cor-curvas);
+}
+
+/* Estilo do link de voltar */
+.back-link {
+    display: inline-block;
+    margin-top: 2rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--cor-header-footer);
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: var(--cor-curvas);
+}
+
+/* Estilo da página de Redes Sociais */
+.social-content {
+    text-align: center;
+}
+
+.social-icon {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 1rem auto;
+}
+
+.simple-link {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--cor-texto-principal);
+}
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .page-wrapper {
+        margin: 1rem;
+    }
+    .content {
+        padding: 1.5rem 2rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    nav {
+        gap: 1rem;
+        flex-wrap: wrap; /* Permite que os links quebrem a linha se necessário */
+    }
+    .nav-link {
+        font-size: 1rem;
+    }
+    .page-wrapper::before,
+    .page-wrapper::after {
+        width: 200px;
+        height: 200px;
+    }
+    .page-wrapper::before {
+        top: 100px;
+        left: -120px;
+    }
+    .page-wrapper::after {
+        bottom: 100px;
+        right: -120px;
+    }
+}
