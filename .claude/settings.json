@@ -18,7 +18,13 @@
       "Bash(cp -f __TRACKED_VAR__/index.html __TRACKED_VAR__/sobre.html __TRACKED_VAR__/servicos.html __TRACKED_VAR__/contato.html __TRACKED_VAR__/style.css __TRACKED_VAR__/README.md .)",
       "Bash(mkdir -p assets)",
       "Bash(cp -f __TRACKED_VAR__/assets/* assets/)",
-      "Bash(echo \"--- assets/ na raiz ---\")"
+      "Bash(echo \"--- assets/ na raiz ---\")",
+      "Bash(git fetch *)",
+      "Bash(git merge *)",
+      "Bash(git checkout *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)"
     ]
   }
 }
