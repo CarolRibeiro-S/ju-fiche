@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find C:/Users/anaca/AppData/Local/Temp/claude/c--Users-anaca-OneDrive--rea-de-Trabalho-Carol-ENGENHARIA-DE-SOFTWARE-DEV-PROJECTS-PERSO-SITE-JU-FICHE/7f2f868d-cd69-4c6c-8fef-ed32751b5289/scratchpad/jufiche-check/jufiche-site/assets)",
+      "Bash(echo \"---diff index.html---\")",
+      "Bash(diff C:/Users/anaca/AppData/Local/Temp/claude/c--Users-anaca-OneDrive--rea-de-Trabalho-Carol-ENGENHARIA-DE-SOFTWARE-DEV-PROJECTS-PERSO-SITE-JU-FICHE/7f2f868d-cd69-4c6c-8fef-ed32751b5289/scratchpad/jufiche-check/jufiche-site/index.html 'c:/Users/anaca/OneDrive/Área de Trabalho/Carol/ENGENHARIA DE SOFTWARE/DEV PROJECTS/PERSO/SITE JU FICHE/files/index.html')",
+      "Bash(echo \"---diff style.css---\")",
+      "Bash(diff C:/Users/anaca/AppData/Local/Temp/claude/c--Users-anaca-OneDrive--rea-de-Trabalho-Carol-ENGENHARIA-DE-SOFTWARE-DEV-PROJECTS-PERSO-SITE-JU-FICHE/7f2f868d-cd69-4c6c-8fef-ed32751b5289/scratchpad/jufiche-check/jufiche-site/style.css 'c:/Users/anaca/OneDrive/Área de Trabalho/Carol/ENGENHARIA DE SOFTWARE/DEV PROJECTS/PERSO/SITE JU FICHE/files/style.css')",
+      "Bash(mkdir -p C:/Users/anaca/AppData/Local/Temp/claude/c--Users-anaca-OneDrive--rea-de-Trabalho-Carol-ENGENHARIA-DE-SOFTWARE-DEV-PROJECTS-PERSO-SITE-JU-FICHE/7f2f868d-cd69-4c6c-8fef-ed32751b5289/scratchpad/rootzip-check)",
+      "Bash(unzip -o 'c:/Users/anaca/OneDrive/Área de Trabalho/Carol/ENGENHARIA DE SOFTWARE/DEV PROJECTS/PERSO/SITE JU FICHE/files.zip' -d C:/Users/anaca/AppData/Local/Temp/claude/c--Users-anaca-OneDrive--rea-de-Trabalho-Carol-ENGENHARIA-DE-SOFTWARE-DEV-PROJECTS-PERSO-SITE-JU-FICHE/7f2f868d-cd69-4c6c-8fef-ed32751b5289/scratchpad/rootzip-check)",
+      "Bash(find C:/Users/anaca/AppData/Local/Temp/claude/c--Users-anaca-OneDrive--rea-de-Trabalho-Carol-ENGENHARIA-DE-SOFTWARE-DEV-PROJECTS-PERSO-SITE-JU-FICHE/7f2f868d-cd69-4c6c-8fef-ed32751b5289/scratchpad/rootzip-check)",
+      "Bash(git rm *)",
+      "Bash(rm -f files.zip files/jufiche-site.zip)",
+      "Bash(rm -f \"fastias de um domingo.png\" \"passo a passo.png\" \"receitas.png\" \"rede social.png\")",
+      "Bash(mv files/index.html files/sobre.html files/servicos.html files/contato.html files/style.css files/README.md .)",
+      "Bash(rmdir files/)",
+      "Bash(cd \"c:/Users/anaca/OneDrive/Área de Trabalho/Carol/ENGENHARIA DE SOFTWARE/DEV PROJECTS/PERSO/SITE JU FICHE\")",
+      "Bash(cp -f __TRACKED_VAR__/index.html __TRACKED_VAR__/sobre.html __TRACKED_VAR__/servicos.html __TRACKED_VAR__/contato.html __TRACKED_VAR__/style.css __TRACKED_VAR__/README.md .)",
+      "Bash(mkdir -p assets)",
+      "Bash(cp -f __TRACKED_VAR__/assets/* assets/)",
+      "Bash(echo \"--- assets/ na raiz ---\")"
+    ]
+  }
+}
