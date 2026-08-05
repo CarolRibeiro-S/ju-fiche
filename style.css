@@ -41,7 +41,7 @@ p{ margin: 0 0 1em; color: var(--ink-soft); }
 .site-header{ position: sticky; top: 0; z-index: 40; background: rgba(248, 244, 238, 0.96); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); overflow: hidden; }
 .site-header .container{ display: flex; align-items: center; justify-content: space-between; padding-top: 1.1rem; padding-bottom: 1.1rem; }
 .logo{ display: flex; flex-direction: column; line-height: 0.85; }
-.logo-mark{ display: block; width: 148px !important; height: 40px !important; background-image: url("assets/logo.png"); background-repeat: no-repeat; background-position: left center; background-size: contain; }
+.logo-mark{ display: block; width: 222px !important; height: 60px !important; background-image: url("assets/logo.png"); background-repeat: no-repeat; background-position: left center; background-size: contain; }
 .logo-tag{ margin-top: 0.5rem; font-size: 0.7rem; letter-spacing: 0.13em; text-transform: uppercase; color: var(--ink-soft); }
 nav.main-nav ul{ list-style: none; display: flex; gap: 2.1rem; margin: 0; padding: 0; }
 nav.main-nav a{ font-weight: 500; font-size: 1.05rem; position: relative; padding-bottom: 3px; text-shadow: 0 0 9px rgba(201,106,67,0.4); }
@@ -93,7 +93,7 @@ nav.main-nav a.active::after{ content: ""; position: absolute; left: 0; right: 0
 .footer-wave{ display: block; width: 100%; height: auto; }
 .footer-main{ background: linear-gradient(165deg, var(--magenta) 0%, var(--magenta-deep) 65%, var(--magenta-darkest) 130%); padding-top: 0.6rem; }
 .footer-grid{ display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 1.3rem; padding: 2.2rem 0 1.8rem; }
-.footer-logo{ display: block; width: 148px !important; height: 36px !important; background-image: url("assets/logo.png"); background-repeat: no-repeat; background-position: left center; background-size: contain; filter: brightness(0) invert(1); margin-bottom: 1.3rem; }
+.footer-logo{ display: block; width: 216px !important; height: 53px !important; background-image: url("assets/logo.png"); background-repeat: no-repeat; background-position: left center; background-size: contain; filter: brightness(0) invert(1); margin-bottom: 1.3rem; }
 .footer-brand{ padding-left: 1.1rem; }
 .footer-brand p{ color: rgba(255,255,255,0.78); font-size: 0.92rem; max-width: 30ch; margin: 0; }
 .footer-col h4{ font-family: 'Jost', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--orange); margin: 0 0 1rem; }
